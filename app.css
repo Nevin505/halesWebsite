@@ -1,0 +1,128 @@
+body{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: black 2px solid;
+}
+.nav-contact{
+    margin-top: 1rem;
+}
+.nav-contact-ul-list-method{
+    display: inline-block;
+    padding: 0.5rem;
+    font-weight: 100;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+
+}
+.middle-nav-image{
+    max-width: 500px;
+    flex-grow: 1;
+    font-weight: bolder;
+    width: 1rem;
+    /* letter-spacing: 0.2em; */
+    text-align: center;
+    align-self: center;
+}
+img{
+    width: 8rem;
+}
+.nav-contact-button{
+   padding: 10px 35px;
+   margin-left: 1em;
+   font-family: Gt America Condensed Bold, sans-serif;
+   font-size: bold;
+   font-weight: 600;
+   background-color: white;
+   color: black;
+   border-radius: 10%;
+}
+.nav-contact-button:last-child{
+  background-color: black;
+  color: white;
+}
+
+.nav-contact-button:hover{
+    background-color: black;
+    color: white;
+}
+
+.nav-contact-button:last-child:hover{
+    background-color: grey;
+    color: white;
+}
+.last-nav-bar ul li{
+    display: inline-block;
+    padding: 0px 25px;
+}
+.middle-section{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30.5em;
+}
+.middle-section-firstbox{
+  flex-grow: 1;
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+   max-width: 28%;
+  padding-left: 4.2em; 
+  padding-right: 3.2em;
+}
+.middle-section-firstbox div:nth-child(1){
+    border: black 5px dotted;
+    font-size: 2.2vw;
+    text-size-adjust: auto;
+    font-weight: bolder;
+    align-self: center;
+}
+.middle-section-firstbox div:nth-child(1) button {
+  padding: 15px 25px;
+  margin-left: 1.2em;
+}
+.middle-section-secondbox{
+    flex-grow: 4;  
+    border: solid red 2px;
+    max-width: 70%;
+  
+  
+}
+.middle-section-firstbox button{
+    padding: 15vw 25vw;
+  
+}
+.image1{
+        width: 100%; /* or any custom size */
+        height: 100%; 
+        object-fit:cover ;
+}
+.middle-section-firstbox-button{
+    display: flex;
+
+}
+.middle-section-firstbox-button button{
+    border-radius: 8%;
+}
+.middle-section-2{
+    padding: 0px 5rem;
+    display: flex;
+    justify-content: space-between ;
+}
+.middle-font{
+    border-left: 4px solid yellow;
+    padding-left: 0.8rem;
+    font-weight: 1000;
+}
+.middle-section-2-inside{
+    width: 10rem;
+}
