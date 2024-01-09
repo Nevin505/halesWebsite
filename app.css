@@ -10,6 +10,7 @@ body {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    /* min-height: 100dvh; */
 }
 
 .main-nav {
@@ -31,12 +32,16 @@ body {
 }
 
 .image-div a {
-    position: absolute;
+    display: block;
+
 }
 
 .image-div img {
-    position: relative;
-    left: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* left: 30%; */
     width: 55%;
 }
 
@@ -90,17 +95,18 @@ body {
 .dropdown {
     position: relative;
     cursor: pointer;
-    /* display: inline-block; */
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
+    right: 0px;
     background-color: #f9f9f9;
     width: 10rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
+
 
 .dropdown-content a {
     color: black;
@@ -118,6 +124,9 @@ body {
     display: block;
 }
 
+.dropdown:hover .inside {
+    transform: rotate(90deg);
+}
 
 
 .middle-section {
@@ -133,30 +142,44 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 28%;
-    padding-left: 4.2em;
-    padding-right: 3.2em;
+    gap: 2rem;
+}
+/*  */
+.inner-div {
+    padding-left: 2.8rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 90%;
 }
 
-.middle-section-firstbox div:nth-child(1) {
-    /* border: black 5px dotted; */
-    font-size: 2rem;
-    text-size-adjust: auto;
-    font-weight: bolder;
-    align-self: center;
-    /* font-family:Gt America Condensed Bold, sans-serif; */
-
+.inner-div h1 {
+    font-size: 2.6rem;
+    line-height: 1.4;
+}
+.inner-div-child{
+    max-width: 80%;
+    padding-left: 2.1rem;
+    padding-bottom: 1.2rem;
 }
 
-.middle-section-firstbox div:nth-child(1) button {
-    padding: 15px 25px;
-    margin-left: 1.2em;
+.middle-section-firstbox-button {
+    display: flex;
+    gap: 2rem;
+}
+
+.inner-div:last-child {
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .middle-section-secondbox {
     border: solid red 2px;
     width: 70%;
-    flex: 3;
+    flex: 2;
 
 }
 
@@ -167,7 +190,6 @@ body {
 
 .image1 {
     width: 100%;
-    /* or any custom size */
     height: 100%;
     object-fit: cover;
 }
@@ -184,8 +206,8 @@ body {
 
 
 .middle-font {
-    border-left: 0px solid yellow;
-    padding-left: 0.8rem;
+    border-left: 0.2rem solid yellow;
+    padding-left: 0.4rem;
     font-weight: 800;
     font-size: xx-large;
     margin-top: 28px;
@@ -196,7 +218,7 @@ body {
 .middle-section-2 {
     width: 100%;
     box-sizing: border-box;
-    padding: 0px 5rem;
+    padding: 0px 2.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,7 +230,7 @@ body {
 }
 
 .middle-section-2-inside div {
-    padding-left: 1.2em;
+    padding-left: 1em;
     color: #92959a;
     font-family: Gt America Regular, sans-serif;
     font-weight: 400;
@@ -220,19 +242,16 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 6.5rem;
+    padding: 5.5rem 2.8rem;
     gap: 1rem;
 }
 
 .section3-insideBox {
-    width: 25%;
+    width: 32%;
     display: flex;
     flex-direction: column;
-
-    /* padding-left: 0.2rem; */
     background-color: greenyellow;
     align-self: stretch;
-    /* border: solid black 0px; */
 }
 
 .section3-insideBox img {
@@ -245,8 +264,10 @@ body {
     padding-left: 1em;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    ;
     background-color: red;
-    align-self: normal;
+    align-self: stretch;
     flex-grow: 1;
     padding-bottom: 2em;
 }
@@ -256,12 +277,205 @@ body {
     margin-top: auto
 }
 
+.section3-insideBox2 div button {
+    padding: 0.5rem 1.2rem;
+    border-radius: 9%;
+}
+
 .last-nav-bar {
     padding: 1rem;
 }
 
-/*  Responsive Design */
+.section4-box {
+    width: 100%;
+    padding: 3.8rem 0;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.2rem;
+}
 
+.section4-insidebox {
+    width: 90%;
+    cursor: grab;
+}
+
+.section4-insidebox img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 2%;
+}
+
+.section4-insidebox2 {
+    width: 90%;
+    display: flex;
+    gap: 1rem;
+}
+
+.section4-insidebox2-innerbox2 {
+    flex: 1;
+}
+
+.section4-insidebox2-innerbox2 h1 {
+    font-size: xx-large;
+    color: slategray;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.section4-insidebox2-innerbox2 h2 {
+    padding-top: 2rem;
+    font-size: 4.2rem;
+
+    font-family: 'PT Sans', sans-serif;
+}
+
+.section4-insidebox2-2 {
+    flex: 2;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.section4-insidebox2-innerbox1 {
+    flex: 1 0 16rem;
+    padding-left: 1.2rem;
+    border-left: 1px solid black;
+}
+
+.section4-insidebox2-innerbox1 img {
+    width: 100%;
+    aspect-ratio: 2/1;
+}
+
+.section4-insidebox2-innerbox1-box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-top: 1rem;
+}
+
+.section4-insidebox2-innerbox1-box1 button {
+    padding: 0.5rem 1rem;
+    border-radius: 8%;
+    background-color: transparent;
+}
+
+.section4-insidebox2-innerbox1-box1 div button:hover {
+    background-color: black;
+    color: white;
+}
+
+.section5-box {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    background-color: black;
+    color: white;
+}
+
+.section5-insidebox-1 {
+    width: 90%;
+}
+
+.section5-insidebox-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section5-insidebox-inner h1 {
+    color: slategray;
+    font-size: large;
+}
+
+.section5-insidebox-inner-1 h1 {
+    font-size: 3.8REM;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.section5-insidebox-inner P {
+    font-size: x-large;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.section5-insidebox-inner-1 {
+    display: flex;
+    flex: 1;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.section5-insidebox-2 {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section5-insidebox-inner-2 {
+    width: 8rem;
+    text-align: center;
+}
+
+.section5-insidebox-inner-2 img {
+    width: 100%;
+
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-box {
+    padding-top: 2rem;
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-box-1 {
+    width: max-content;
+    flex: 2 ;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.footerimagediv{
+    width: 10rem;
+    height: 2rem;
+}
+.footerimagediv img{
+    width: 100%;
+    height: 100%;
+}
+.footer-box-12{
+    flex: 1 0 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: space-between;
+}
+.footer-box-1 ul li{
+    padding: 0.6rem 0.2rem;
+    list-style:none ;
+}
+.footermedialinks{
+    padding-bottom: 0.6rem;
+}
+.footermedialinks p{
+    padding-top: 0.6rem;
+}
 @media (max-width:980px) {
     .section3-box {
         flex-direction: row;
@@ -276,11 +490,17 @@ body {
     .middle-section-2 {
         flex-wrap: wrap;
     }
+
     .middle-section-2-inside {
         width: 48%;
-        flex-grow:1;
+        flex-grow: 1;
     }
-    
+
+    .section4-insidebox2 {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width:600px) {
@@ -314,8 +534,9 @@ body {
 
     .middle-section-secondbox {
         order: 1;
-        flex-grow: 1;
+        flex: 1;
         width: 100%;
+
     }
 
     .section3-insideBox2 div {
@@ -333,28 +554,41 @@ body {
     }
 
     .second-nav {
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        /* align-items: center; */
         box-sizing: border-box;
     }
-    /* .second-nav {
-        display: flex;
-        justify-content: center;
-    }
-     */
+
     .second-nav div {
         padding: 1rem 0.8rem;
         width: min-content;
     }
-    
 
     .middle-section-2 {
         padding: 2rem;
         flex-wrap: wrap;
     }
-    
 
+    .inner-div {
+        gap: 3.8rem;
+        padding-left: 1rem;
+    }
+
+    .inner-div h1 {
+        line-height: 1.1;
+    }
+
+    .section4-insidebox {
+        width: 90%;
+    }
+
+    .section4-insidebox2-innerbox1 {
+        flex-wrap: wrap;
+    }
+
+    .section5-insidebox-inner-1 {
+        display: flex;
+        flex-direction: column;
+
+    }
 }
 
 /*  Responsive Design */
