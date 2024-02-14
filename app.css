@@ -138,7 +138,8 @@ body {
 
 .middle-section-firstbox {
     flex: 1;
-    border: solid black 2px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -177,7 +178,6 @@ body {
 }
 
 .middle-section-secondbox {
-    border: solid red 2px;
     width: 70%;
     flex: 2;
 
@@ -203,22 +203,10 @@ body {
     border-radius: 8%;
 }
 
-
-
-.middle-font {
-    border-left: 0.2rem solid yellow;
-    padding-left: 0.4rem;
-    font-weight: 800;
-    font-size: xx-large;
-    margin-top: 28px;
-    /* Doubt regarding margin */
-    margin-bottom: 0.4em;
-}
-
 .middle-section-2 {
     width: 100%;
     box-sizing: border-box;
-    padding: 0px 2.8rem;
+    padding: 1.5rem 2.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,6 +215,14 @@ body {
 .middle-section-2-inside {
     width: 7rem;
     flex-grow: 1;
+    margin-bottom: auto;
+}
+
+.middle-font {
+    border-left: 0.2rem solid rgb(255, 251, 0);
+    padding-left: 0.4rem;
+    font-weight: 800;
+    font-size: xx-large;
 }
 
 .middle-section-2-inside div {
@@ -236,37 +232,55 @@ body {
     font-weight: 400;
     font-size: 14px;
 }
-
+.section3{
+    display: flex;
+    justify-content: center;
+}
 .section3-box {
     display: flex;
     flex-wrap: wrap;
+    width: 98%;
     justify-content: center;
     align-items: center;
     padding: 5.5rem 2.8rem;
     gap: 1rem;
 }
-
+.section3-insideBox:nth-child(1){
+    border: none;
+}
 .section3-insideBox {
     width: 32%;
     display: flex;
     flex-direction: column;
-    background-color: greenyellow;
+    border: 2px black solid;
+    border-radius: 2%;
     align-self: stretch;
 }
 
+.section3-insideBox h1{
+    padding-top: 1rem;
+
+}
+.section3-insideBox2 h1{
+    font-family: 'Roboto', sans-serif; 
+    font-size: x-large;
+}
+
+.start-text{
+  font-family: 'Roboto', sans-serif; 
+ font-size: 2.6em;
+}
 .section3-insideBox img {
     width: 25%;
 }
 
 .section3-insideBox2 {
-    box-sizing: border-box;
     padding-top: 2em;
-    padding-left: 1em;
+    padding-left: 2em;
+    width: 78%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    ;
-    background-color: red;
+    gap: 1.4rem;
     align-self: stretch;
     flex-grow: 1;
     padding-bottom: 2em;
@@ -480,7 +494,6 @@ body {
     .section3-box {
         flex-direction: row;
         width: 100%;
-        background-color: blue;
     }
 
     .section3-insideBox {
@@ -494,6 +507,7 @@ body {
     .middle-section-2-inside {
         width: 48%;
         flex-grow: 1;
+        /* margin: auto; */
     }
 
     .section4-insidebox2 {
@@ -503,22 +517,15 @@ body {
 
 }
 
-@media (max-width:600px) {
-    nav {
-        background-color: red;
-    }
-
+@media (max-width:660px) {
     .section3-box {
         flex-direction: column;
         width: 100%;
-
-        background-color: blue;
     }
 
-    .section3-insideBox {
+    .section3-insideBox{
         width: 100%;
         box-sizing: border-box;
-        background-color: yellow;
     }
 
     .middle-section {
@@ -538,7 +545,9 @@ body {
         width: 100%;
 
     }
-
+    .section3-box{
+        padding: 2.5rem 1.8rem;
+    }
     .section3-insideBox2 div {
         padding-top: 1rem;
     }
@@ -588,6 +597,12 @@ body {
         display: flex;
         flex-direction: column;
 
+    }
+    .section3-insideBox h1{
+        font-size: 2rem;
+    }
+    .inner-div h1 {
+        font-size: 2rem;
     }
 }
 
